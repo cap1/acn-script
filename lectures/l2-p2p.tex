@@ -20,4 +20,35 @@ Peer-to-Peer (P2P) Networks lack a central server so that all entities are equal
 \end{description}
 % subsection features (end)
 
+\subsection{Problems with the Client/Server Model} % (fold)
+\label{sub:problems_with_the_client_server_model}
+The amount of Data the normal users transmit has been growing massively over last years.
+Due to the increase in bandwidth,
+users can also transmit these amounts of data.
+
+\paragraph{Client/Server} % (fold)
+\label{par:client_server}
+is the classical model for the Internet.
+A single server responds to the request of all users.
+This server is also the problem of the model.
+It may be easier to manage the single server,
+but it is also the bottleneck and a single-point of failure.
+If this server breaks down,
+the service will not be available
+and a single server just won't scale.
+% paragraph client_server (end)
+
+\paragraph{Replication} % (fold)
+\label{par:replication}
+solves some problems with the client/server model.
+The server is mirrored so that it is not a single-point of failure anymore.
+Although replication will still not scale well
+and one can run into trouble due to high-workload on a single replica.
+This single replica than has the same problems as a single server
+as the workload is not distributed among the others.
+Also maintenance might be a problem.
+% paragraph replication (end)
+
+% subsection problems_with_the_client_server_model (end)
+
 % section lecture_2_introduction_to_p2p_networks (end)
