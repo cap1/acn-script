@@ -65,6 +65,37 @@ These systems work even better if more users are connected.
 They are designed to be easy to use and to deploy,
 to be fault tolerant.
 Users can connect and leave dynamically and the quality of service is not altered.
+
+\paragraph{BitTorrent} % (fold)
+\label{par:bittorrent}
+The basic ideas in P2P-Networks are \emph{chunking} and \emph{swarming}.
+To enhance the download speed,
+the files are split in smaller chunks.
+These can be downloaded in parallel
+and in any given order.
+
+Clients join a crowd of peers for the same content.
+They request chunks from their neighbors
+and download content in parallel.
+
+A central node is used to publish the content
+and find peers to get content.
+This \emph{Tracker}, is a webserver that tracks the active peers
+and maps them.
+The \emph{Peers} can be distinguished in Seeders and Leechers,
+where the later do not have a complete copy of the file.
+In the \emph{.torrent} file the file to be shared among the peers is described with its metadata.
+It contains:\\
+\begin{itemize}
+	\item Number of chunks
+	\item Trackers IP
+	\item File Metadata (Checksums)
+\end{itemize}
+
+
+% paragraph bitto (end)
+
+% paragraph bittorrent (end)
 % subsection peer_2_peer (end)
 
 % section lecture_2_introduction_to_p2p_networks (end)
