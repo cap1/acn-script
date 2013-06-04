@@ -68,6 +68,9 @@ Users can connect and leave dynamically and the quality of service is not altere
 
 \paragraph{BitTorrent} % (fold)
 \label{par:bittorrent}
+BitTorrent is an example for an unstructured P2P-Network,
+as there is no central entity the network relies on.
+
 The basic ideas in P2P-Networks are \emph{chunking} and \emph{swarming}.
 To enhance the download speed,
 the files are split in smaller chunks.
@@ -92,8 +95,17 @@ It contains:\\
 	\item File Metadata (Checksums)
 \end{itemize}
 
+BitTorrent uses a Tit-for-Tat Policy to ensure that the data gets distributed.
+This encourages users to share their bandwidth.
+The selection of the chunks is an important factor.
+If certain chunks are unavailable,
+the whole file cannot be retrieved via the network.
 
-% paragraph bitto (end)
+Therefore a rarest-first policy is used for downloading chunks.
+The overall goal is to maximise the availability of all the chunks.
+
+
+% paragraph bittorrent (end)
 
 % paragraph bittorrent (end)
 % subsection peer_2_peer (end)
