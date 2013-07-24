@@ -19,7 +19,7 @@
 			"file": "lectures/l2-p2p.tex",
 			"settings":
 			{
-				"buffer_size": 151,
+				"buffer_size": 2161,
 				"line_ending": "Unix"
 			}
 		}
@@ -27,19 +27,27 @@
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"command_palette":
 	{
-		"height": 72.0,
+		"height": 92.0,
 		"selected_items":
 		[
+			[
+				"git push",
+				"Git: Push"
+			],
 			[
 				"qui",
 				"Git: Quick Commit"
 			],
 			[
-				"ad",
+				"git add",
 				"Git: Add Current File"
 			],
 			[
 				"add",
+				"Git: Add Current File"
+			],
+			[
+				"ad",
 				"Git: Add Current File"
 			],
 			[
@@ -53,10 +61,6 @@
 			[
 				"git diff",
 				"Git: Diff Current File"
-			],
-			[
-				"git push",
-				"Git: Push"
 			],
 			[
 				"quic",
@@ -84,6 +88,8 @@
 	},
 	"file_history":
 	[
+		"/home/cap/uni/datasec/essay-datasec/title/title.tex",
+		"/home/cap/gobics/metapro/trunk/thesis/thesis.tex",
 		"/home/cap/uni/ebio/ebio-script/ebio-script.tex",
 		"/home/cap/uni/ebio/ebio-script/Makefile",
 		"/home/cap/uni/ebio/ebio-script/EntwicklungsZellbiologie.txt",
@@ -163,23 +169,24 @@
 					"file": "lectures/l2-p2p.tex",
 					"settings":
 					{
-						"buffer_size": 151,
+						"buffer_size": 2161,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2017,
+								2017
 							]
 						],
 						"settings":
 						{
+							"spell_check": true,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
