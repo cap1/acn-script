@@ -106,6 +106,19 @@ The basic components in a BitTorrent network are:
 	\item[Peer] downloading as a leecher or sharing complete copy as seeder
 	\item[.torrent] file containing the meta data of the data, ie. trackers IP and hashes of chunks
 \end{description}
+
+BitTorrent enforces a Tit-for-Tat policy,
+so that users are encouraged to share bandwidth and data.
+Also peers serve peers who that serve them,
+so that free-riding is discouraged.
+The chunk selection is done in a rares-first policy.
+This maximizes the availability of each chunk.
+
+BitTorrent is an efficient P2P protocol,
+as it is fast, resilient, maximizes the availability of the data
+and discourages free-riding.
+Problems are that the tracker could be a single point of failure
+and the lack of a search feature.
 % subsubsection bittorrent (end)
 % subsection peer_2_peer (end)
 
