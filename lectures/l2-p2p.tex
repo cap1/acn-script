@@ -51,10 +51,10 @@ Also maintenance might be a problem.
 
 \paragraph{Proxy \& CDN} % (fold)
 \label{par:proxy_&_cdn}
-can circumvent the problems with balacing the workload,
+can circumvent the problems with balancing the workload,
 but still do not scale well in terms of bandwidth and CPU power.
 And as they increase the complexity,
-they maintenance gets more difficutlt.
+they maintenance gets more difficult.
 % paragraph proxy_&_cdn (end)
 % subsection problems_with_the_client_server_model (end)
 
@@ -68,14 +68,14 @@ Users can connect and leave dynamically and the quality of service is not altere
 
 \paragraph{Current State}
 of P2P networks is that their overall share of network bandwidth used is declining.
-This is due to the fact that the overall amount of bandwith used is increasing,
+This is due to the fact that the overall amount of bandwidth used is increasing,
 while P2P traffic is not increasing.
 
-Topics in resarch are the structure of P2P Networks,
+Topics in research are the structure of P2P Networks,
 regarding structured and unstructured P2P.
 The security and the privacy of the users are also a research topic,
-as well als the legal issues associated with P2P
-Locating the the desired data in the P2P networks has always been an intresting thing,
+as well as the legal issues associated with P2P
+Locating the the desired data in the P2P networks has always been an interesting thing,
 as different types of networks solve this in different ways.
 
 \paragraph{Structured & Unstructured} % (fold)
@@ -83,7 +83,7 @@ as different types of networks solve this in different ways.
 are the main groups to sort P2P networks.
 Unstructured networks are highly flexible,
 dynamic and easy to maintain.
-They base on the losely connected nodes having no central point.
+They base on the loosely connected nodes having no central point.
 Due to this, it is hard to look information up.
 
 Structured P2P networks have a fixed structure,
@@ -93,12 +93,19 @@ which enables an easy look up to find information.
 \subsubsection{BitTorrent} % (fold)
 \label{ssub:bittorrent}
 BitTorrent is an unstructured P2P Network, that is very popular.
-It accounted for 37\% of the internet traffic in the german internet in 2009.
-The basice concepts of BitTorrent are \emph{chunking} and \emph{swarming}.
+It accounted for 37\% of the Internet traffic in the German Internet in 2009.
+The basic concepts of BitTorrent are \emph{chunking} and \emph{swarming}.
 Where the files are split into smaller pieces or chunks,
 so they can be downloaded in parallel and the order of download becomes irrelevant.
 The chunks are then transfered between the nodes in a swarm,
 who exchange the same content.
+
+The basic components in a BitTorrent network are:
+\begin{description}
+	\item[Tracker] special server, tracking active peers and mapping file names to them
+	\item[Peer] downloading as a leecher or sharing complete copy as seeder
+	\item[.torrent] file containing the meta data of the data, ie. trackers IP and hashes of chunks
+\end{description}
 % subsubsection bittorrent (end)
 % subsection peer_2_peer (end)
 
