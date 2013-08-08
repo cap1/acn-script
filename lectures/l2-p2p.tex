@@ -78,7 +78,7 @@ as well as the legal issues associated with P2P
 Locating the the desired data in the P2P networks has always been an interesting thing,
 as different types of networks solve this in different ways.
 
-\paragraph{Structured & Unstructured} % (fold)
+\paragraph{Structured \& Unstructured} % (fold)
 \label{par:structured_unstructured}
 are the main groups to sort P2P networks.
 Unstructured networks are highly flexible,
@@ -121,5 +121,57 @@ Problems are that the tracker could be a single point of failure
 and the lack of a search feature.
 % subsubsection bittorrent (end)
 % subsection peer_2_peer (end)
+
+\subsection{Structured Peer 2 Peer Networks} % (fold)
+\label{sub:structured_peer_2_peer_networks}
+The common problem in P2P networks is how to implement the search for data in the network.
+The requirements for the lookup of data in the network are as follows:
+\begin{description}
+	\item[Scalable] operating with millions of nodes
+	\item[Self-organized] no central or external control
+	\item[Load-distribution] all participants shall contributed
+	\item[Fault-tolerant] robust against leaves and fails of nodes
+	\item[Robustness] resilient against malicious nodes 
+\end{description}
+
+\subsubsection{Distributed Hash Tables} % (fold)
+\label{ssub:distributed_hash_tables}
+The basic idea of Distributed Hash Tables (DHT) is to compute the hash value of the data
+and the hash value of the IP addresses.
+The content, or a content locator,
+is then stored at the machine with the closest hash value.
+
+The method has been introduced in 2001 in four Papers referring to the networks
+\emph{CAN},  \emph{Chord}, \emph{Pastry} and \emph{Tapestry}.
+\emph{BitTorrent}\ref{ssub:bittorrent} also makes use of Kadamelia DHT.
+
+	\paragraph{Hash Functions} % (fold)
+	\label{par:hash_functions}
+	map an arbitrary input sequence to an output with a fixed length.
+	A slight change in the input usually leads to a huge change in the output
+	as the functions span the whole 2\textsuperscript{k} space of the hashlength \texttt{k}. 
+
+	Typical has functions are \texttt{SHA-1} or \texttt{MD5},
+	they usually differ in certain aspects like possibility of collisions and the hash value length.
+	% paragraph hash_functions (end)
+
+	\paragraph{Chord} % (fold)
+	\label{par:chord}
+	can serve as an example for the implementation of DHT.
+	Given the identifier space is 2\textsuperscript{4} (0 .. 15).
+	The nodes also have IDs in this space,
+	which is not filled up.
+	So the nodes just cover a subset of the identifiers available (2,5,6,11,14).
+	The have a pointer to their successor,
+	the node with a larger or equal ID in the clockwise direction.
+	Each key, value pair of data is assigned the identifier of Hash(key).
+	The item is then stored at its Successor(Hash(key)).
+
+	The basic lookup can now be achieved in \textit{O(n)},
+	as in the worst case one has to traverse one time over whole ring.
+	% paragraph chord (end)
+
+% subsubsection distributed_hash_tables (end)
+% subsection structured_peer_2_peer_networks (end)
 
 % section lecture_2_introduction_to_p2p_networks (end)
