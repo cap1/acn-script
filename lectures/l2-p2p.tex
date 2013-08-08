@@ -169,6 +169,22 @@ The method has been introduced in 2001 in four Papers referring to the networks
 
 	The basic lookup can now be achieved in \textit{O(n)},
 	as in the worst case one has to traverse one time over whole ring.
+	This can be optimized to \textit{O(log n)} by adding a finger table to each node.
+	This finger table contains fingers for $$succ(n+2^{i-1}$$ as shortcuts through the ring of nodes
+	and thereby reduces the time to route to entries to \textit{$$log_2$$(n)}.
+
+	Although each node just has a limited view of the network,
+	the concept of numeric closeness solves the problems with routing and lookup.
+	
+	The lookup can be done iteratively,
+	so that the requesting client keeps asking the next node where to continue looking.
+	It can also be implemented recursively,
+	so that the node querried first,
+	will keep asking its successor and finally answer the request.
+	Recursuve lookup allows each node to optimize its request
+	and allows fast and efficient processing of the request.
+	Iterative lookup allows the client to keep control
+	and it can detect failures and localize them.
 	% paragraph chord (end)
 
 % subsubsection distributed_hash_tables (end)
