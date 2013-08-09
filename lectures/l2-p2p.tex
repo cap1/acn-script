@@ -134,6 +134,8 @@ The requirements for the lookup of data in the network are as follows:
 	\item[Robustness] resilient against malicious nodes 
 \end{description}
 
+% subsection structured_peer_2_peer_networks (end)
+
 \subsubsection{Distributed Hash Tables} % (fold)
 \label{ssub:distributed_hash_tables}
 The basic idea of Distributed Hash Tables (DHT) is to compute the hash value of the data
@@ -154,9 +156,10 @@ The method has been introduced in 2001 in four Papers referring to the networks
 	Typical has functions are \texttt{SHA-1} or \texttt{MD5},
 	they usually differ in certain aspects like possibility of collisions and the hash value length.
 	% paragraph hash_functions (end)
+% subsubsection distributed_hash_tables (end)
 
-	\paragraph{Chord} % (fold)
-	\label{par:chord}
+\subsubsection{Chord} % (fold)
+\label{ssub:chord}
 	can serve as an example for the implementation of DHT.
 	Given the identifier space is 2\textsuperscript{4} (0 .. 15).
 	The nodes also have IDs in this space,
@@ -185,9 +188,49 @@ The method has been introduced in 2001 in four Papers referring to the networks
 	and allows fast and efficient processing of the request.
 	Iterative lookup allows the client to keep control
 	and it can detect failures and localize them.
-	% paragraph chord (end)
 
-% subsubsection distributed_hash_tables (end)
-% subsection structured_peer_2_peer_networks (end)
+	\paragraph{Nodes join, leaving and failing} % (fold)
+	\label{par:nodes_join_leaving_and_failing}
+	are cases that need to be considered.
+	When a new node joins in the ring,
+	it needs to bootstrap its postiotn and find out about its neighbours.
+	Also the routing needs to be altered.
+
+	When a node joins and has found out about its own ID,
+	it contacts tries to contact its successor to get the IDs of its successor and its predecessor.
+	The nodes now change the responsibilty for documents in the range of the new node.
+	To check if a node has left or has failed,
+	successor are regulary pinged to see if they are still alive.
+	This allows to treat fails as normal case.
+	When a node is not reachable anymore,
+	its successor gains responsibilty for the data of the leaving or failing node.
+	% paragraph nodes_join_leaving_and_failing (end)
+
+	\paragraph{Storage} % (fold)
+	\label{par:storage}
+	of data can be either direct or indirect.
+	If it is impelmented directly,
+	the data is stored on the nodes currently responsible for the data as defined by the ring structure.
+	This leads to high overhead in communication
+	and data transfer as the files need to be copied a lot.
+	Especially if nodes are leaving and joining regularily.
+
+	If only pointers to the actual data are stored on the nodes,
+	the overhead is reduced and the load on the DHT is reduced.
+	% paragraph storage (end)
+
+	\paragraph{Successor sets} % (fold)
+	\label{par:successor_sets}
+	are similar to fingers.
+	The nodes keep information about the successors and predecessors.
+	They ping them regularly and replace them with the nearest node,
+	which makes the ring less fragile as the nodes know about each other.
+
+	With the \texttt{stablize()} function the nodes learn about each other
+	and update their fingertables and successor sets.
+	The lower nodes ask their successor who their predecessors are
+	and inform them if they have changed.
+	% paragraph successor_sets (end)
+% subsubsection chord (end)
 
 % section lecture_2_introduction_to_p2p_networks (end)
