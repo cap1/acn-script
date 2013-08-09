@@ -1,2 +1,356 @@
 {
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "acn.tex",
+			"settings":
+			{
+				"buffer_size": 1706,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lectures/l2-p2p.tex",
+			"settings":
+			{
+				"buffer_size": 10482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lectures/l3-osn.tex",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 232.0,
+		"selected_items":
+		[
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git pu",
+				"Git: Pull"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				" git pull",
+				"Git: Pull"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"ad",
+				"Git: Add Current File"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/cap/uni/acn/acn-script/acn.tex",
+		"/home/cap/uni/acn/acn-script/lectures/l2-p2p.tex",
+		"/home/cap/uni/datasec/essay-datasec/title/title.tex",
+		"/home/cap/gobics/metapro/trunk/thesis/thesis.tex",
+		"/home/cap/uni/ebio/ebio-script/ebio-script.tex",
+		"/home/cap/uni/ebio/ebio-script/Makefile",
+		"/home/cap/uni/ebio/ebio-script/EntwicklungsZellbiologie.txt",
+		"/home/cap/.config/sublime-text-2/Packages/User/make.sublime-build",
+		"/home/cap/uni/ebio/ebio-script/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"asymmetrische Zell",
+			"asymme",
+			"	\n",
+			"selek",
+			"parallel"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ebio"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "acn.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1706,
+								1706
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lectures/l2-p2p.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10364,
+								10364
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lectures/l3-osn.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-pull":
+	{
+		"height": 100.0
+	},
+	"project": "acn.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/cap/uni/ebio/ebio-script/ebio-script-10-17.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
