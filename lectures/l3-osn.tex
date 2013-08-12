@@ -58,10 +58,19 @@ A connected graph contains only pairs of nodes,
 who have a path in between them.
 If the graph is not connected,
 it can be broken into several connected subgraphs.
+
 A \emph{Connected Component} is a subset of nodes,
 where every node in the subset has a path to every other node
 and the subset ist not part of a larger subset with the same property.
-% subsection modeling_social_networks (end)
-% subsection subsection_name (end)
+Large complex networks often contain a \emph{giant component},
+that comprises a significant fraction of all the nodes.
 
+Social networks tend to cluster in groups,
+called \emph{communities}.
+The nodes inside of a community are stronger interconnected
+and have fewer connections with nodes who are not part of the community.
+
+The \emph{Betweenness} determines the amount of shortest paths,
+passing through a given edge in the network.
+% subsection modeling_social_networks (end)
 % section lecture_3_online_social_networks (end)
