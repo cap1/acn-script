@@ -1,9 +1,10 @@
 \section{Lecture 3 - Online Social Networks} % (fold)
 \label{sec:lecture_3_online_social_networks}
 
-Intro\\
+\subsection{Introduction} % (fold)
+\label{sub:introduction}
 Online Social Networks (OSN) are large online communities like Facebook and Twitter.
-These are the baisc terms in OSN:\\
+These are the basic terms in OSN:\\
 \begin{description}
 	\item[Social Network] \hfill \\
 	A network of a set of individuals,
@@ -22,8 +23,45 @@ The characteristics are:\\
 \begin{description}
 	\item[Virtual] does not exist physically
 	\item[Complex] consists of large number of nodes
-	\item[Grouping] forms communities due to different similarites or interest
+	\item[Grouping] forms communities due to different similarities or interest
 	\item[Dynamic] structure evolves in time
 \end{description}
+% subsection introduction (end)
+
+\paragraph{The analysis of OSN} % (fold)
+\label{par:the_analysis_of_osn}
+can be done using different sets of methods.
+Studying a network empirical, one can find the organization principles of the network.
+With mathematical models on leverages probabilistic and graph theory
+and there are also dedicated algorithms that help understanding  and analyzing networks.
+
+The general targets one tries to achieve are:\\
+\begin{itemize}
+	\item patterns and statistical properties of network data
+	\item desgin principles and models
+	\item understand why OSNs are organized the way they are (prediction)
+\end{itemize}
+% paragraph the_analysis_of_osn (end)
+
+\subsection{Modeling Social Networks} % (fold)
+\label{sub:modeling_social_networks}
+Networks can be represented as a mathematical graph.
+A \emph{Node} is then an object on the network,
+that can be connected via an \emph{Edge} to other nodes.
+
+Depending on the graph the edges can be directed (Following on twitter)
+or indirected (Friendship on Facebook).
+A \emph{Path} then describess a sequence of interconnected nodes
+and a \emph{Circle} is a Path where the first and the last nodes are the same.
+The \emph{Connectivity} of a graph defines how well the nodes are interconnected.
+A connected graph contains only pairs of nodes,
+who have a path in between them.
+If the graph is not connected,
+it can be broken into several connected subgraphs.
+A \emph{Connected Component} is a subset of nodes,
+where every node in the subset has a path to every other node
+and the subset ist not part of a larger subset with the same property.
+% subsection modeling_social_networks (end)
+% subsection subsection_name (end)
 
 % section lecture_3_online_social_networks (end)
