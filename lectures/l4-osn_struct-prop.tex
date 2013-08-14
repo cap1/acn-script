@@ -72,6 +72,31 @@ Distinctive features are:\\
 		\end{equation}
 	% subsubsection clustering_coefficient (end)
 
+	\subsubsection{Degree Centrality} % (fold)
+	\label{ssub:degree_centrality}
+		\begin{equation}
+		\label{eq:degreecentrality}
+			d_i(g) / (n-g)
+		\end{equation}
+	% subsubsection degree_centrality (end)
+
+	\subsubsection{Closeness Centrality} % (fold)
+	\label{ssub:closeness_centrality}
+		\begin{equation}
+		\label{eq:closenesscentrality}
+			(n-1) / \sum_{j\neq i} l(i,j)
+		\end{equation}
+		Where $l(i,j)$ is the length of the shortest path between the nodes i and j.
+	% subsubsection closeness_centrality (end)
+
+	\subsubsection{Betweenness Centrality} % (fold)
+	\label{ssub:betweenness_centrality}
+		\begin{equation}
+		\label{eq:betweennesscentrality}
+			Ce_i^B (g) = \sum_{k\neq j:i\notin\{k,j\}} \frac{P_i(kj)/P(kj)}{(n-1)(n-2)/2}
+		\end{equation}	
+	% subsubsection betweenness_centrality (end)
+
 \subsection{Metrics of typical networks} % (fold)
 \label{sub:metrics_of_typical_networks}
 
