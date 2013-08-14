@@ -14,6 +14,8 @@ Distinctive features are:\\
 
 \subsection{Network Properties} % (fold)
 \label{sub:network_properties}
+	The key Network properties are described in this Section,
+	Degree Distribution, Path Length and Clustering Coefficient.
 
 	\subsubsection{Degree Distribution} % (fold)
 	\label{ssub:degree_distribution}
@@ -29,5 +31,45 @@ Distinctive features are:\\
 	Where $N_k$ is the number of nodes.
 	% subsubsection degree_distribution (end)
 
+	\subsubsection{Path Length} % (fold)
+	\label{ssub:path_length}
+		The Path Length subsumes several metrics for the network size.
+		\paragraph{Distance} % (fold)
+		\label{par:distance}
+		describes the number of edges across the shortest path on the network.
+		This also means that if two nods are not connected,
+		their distance is infinite.
+		% paragraph distance (end)
+
+		\paragraph{Diameter} % (fold)
+		\label{par:diameter}
+		is the maximum distance in terms of edges between any nodes of the network.
+		It is the opposite metric to the distance.
+		% paragraph diameter (end)
+
+		\paragraph{Average Path Length} % (fold)
+		\label{par:average_path_length}
+		is the combined measurement of the distance and the diameter,
+		taking the average distance between all the nodes in the network.
+		% paragraph average_path_length (end)
+	% subsubsection path_length (end)
+
+	\subsubsection{Clustering Coefficient} % (fold)
+	\label{ssub:clustering_coefficient}
+		This metric evaluated how the neighbors of a node are interconnected.
+		For a given node $i$ with the degree $k$,
+		assume the number of neighbors of $i$ is $e$,
+		then the clustering coefficient of $i$ is described in equation \ref{eq:clustercoefficient}.
+		\begin{equation}
+		\label{eq:clustercoefficient}
+		C_i - \frac{e}{k(k - 1)/2}
+		\end{equation}
+
+		The average Clustering Coefficient for network is then:
+		\begin{equation}
+		\label{eq:averagecc}
+		C = \frac{1}{N} \sideset{}{_i^N}\sum C_i
+		\end{equation}
+	% subsubsection clustering_coefficient (end)
 % subsection network_properties (end)
 % section social_networks_structure_&_properties (end)
