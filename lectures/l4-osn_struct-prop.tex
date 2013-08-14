@@ -95,6 +95,17 @@ Distinctive features are:\\
 			\item[Clustering Coefficient] C = 1 --- Average Clustering Coefficient = 1
 		\end{description}
 	% subsubsection regular_latice (end)
+
+	\subsubsection{Random Graph} % (fold)
+	\label{ssub:random_graph}
+	This depends on how the random graph is generated.
+	Here we assume a binomial distribution.
+		\begin{description}
+			\item[Degree Distribution] $P(k) = \binom{n-1}{k}p^k(1-p)^{n-1-k}$
+			\item[Average Path Length] $O(\log n)$
+			\item[Clustering Coefficient] $C = p = \bar{k}/n$
+		\end{description}
+	% subsubsection random_graph (end)
 % subsection metrics_of_typical_networks (end)
 
 % subsection network_properties (end)
