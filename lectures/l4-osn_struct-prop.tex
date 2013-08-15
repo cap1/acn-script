@@ -151,8 +151,53 @@ where celebrities have a huge amount of followers,
 or the imbalance of money distribution,
 where only a few very rich people own a large amount.
 
+\begin{itemize}
+	\item The fraction of telephone numbers that receive calls per day is roughly equivalent to $1/k^2$
+	\item The fraction of books bought is roughly proportional to $1/k^3$
+	\item The fraction of scientific paper cited is roughly proportional to $1/k^3$
+\end{itemize}
+
 The degree distribution is not a Gaussian one,
-but a Power Law distribution.
+but a \emph{Power Law distribution}.
+
+	\subsubsection{Features} % (fold)
+	\label{ssub:features}
+		Let $f(k)$ be the fraction of items having the value $k$ then
+		\begin{equation}
+		\label{eq:powerlaw}
+			f(k) = zk^{-\alpha}
+		\end{equation}
+		where $\alpha$ and $z$ are constants.\\
+		Then $\log$ is applied to both sides so,
+		\begin{equation}
+			\log f(k) = \log z - \alpha\log k
+		\end{equation}
+		now one can easily see if the data follows a power law distribution in a coordinate system.
+		If it follows this distribution,
+		a straight line will form from the data.\\
+		To estimate $\alpha$ one can simply fit line on the log-log axis.
+		\begin{equation}
+			\min_{\alpha}(\log(y) - \alpha\log(x))^2
+		\end{equation}
+	% subsubsection features (end)
 % subsection power_law (end)
+
+\subsection{Small World Phenomenon} % (fold)
+\label{sub:small_world_phenomenon}
+This Phenomenon the fact,
+that most networks are quite densely connected
+and that the distance is much lower than expected.
+Milgram found out about this in his famous experiment in 1967,
+where it took the letters an average of 6.2 hops to reach the target.
+In todays network the number of hops 
+and thereby the diameter are even lower.
+On twitter it was at 4.67 and 4.74 on Facebook both in 2011.
+
+The simple explanation is quite simple.
+If one supposes that each person knows 100 people on a first name basis,
+due to the exponential effects one can reach $100^5 = 10 Billion$ people in the 5\textsuperscript{th} step.
+As the world only inhabits about 7 Billion people,
+the chances of finding a connection is quite large.
+% subsection small_world_phenomenon (end)
 
 % section social_networks_structure_&_properties (end)
