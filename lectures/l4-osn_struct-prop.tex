@@ -74,6 +74,7 @@ Distinctive features are:\\
 
 	\subsubsection{Degree Centrality} % (fold)
 	\label{ssub:degree_centrality}
+		This measurement determines how connected is a certain node inside the network.
 		\begin{equation}
 		\label{eq:degreecentrality}
 			d_i(g) / (n-g)
@@ -82,6 +83,8 @@ Distinctive features are:\\
 
 	\subsubsection{Closeness Centrality} % (fold)
 	\label{ssub:closeness_centrality}
+		Given the Closeness Centrality one can determine,
+		how easily a node can reach other nodes in the network.
 		\begin{equation}
 		\label{eq:closenesscentrality}
 			(n-1) / \sum_{j\neq i} l(i,j)
@@ -91,6 +94,8 @@ Distinctive features are:\\
 
 	\subsubsection{Betweenness Centrality} % (fold)
 	\label{ssub:betweenness_centrality}
+		The Betweenness Centrality of a node gives a measurement how important a node is,
+		in terms of connecting other nodes of the network.
 		\begin{equation}
 		\label{eq:betweennesscentrality}
 			Ce_i^B (g) = \sum_{k\neq j:i\notin\{k,j\}} \frac{P_i(kj)/P(kj)}{(n-1)(n-2)/2}
