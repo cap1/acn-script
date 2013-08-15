@@ -162,23 +162,6 @@ but a \emph{Power Law distribution}.
 
 	\subsubsection{Features} % (fold)
 	\label{ssub:features}
-		Let $f(k)$ be the fraction of items having the value $k$ then
-		\begin{equation}
-		\label{eq:powerlaw}
-			f(k) = zk^{-\alpha}
-		\end{equation}
-		where $\alpha$ and $z$ are constants.\\
-		Then $\log$ is applied to both sides so,
-		\begin{equation}
-			\log f(k) = \log z - \alpha\log k
-		\end{equation}
-		now one can easily see if the data follows a power law distribution in a coordinate system.
-		If it follows this distribution,
-		a straight line will form from the data.\\
-		To estimate $\alpha$ one can simply fit line on the log-log axis.
-		\begin{equation}
-			\min_{\alpha}(\log(y) - \alpha\log(x))^2
-		\end{equation}
 	% subsubsection features (end)
 % subsection power_law (end)
 
@@ -198,6 +181,17 @@ If one supposes that each person knows 100 people on a first name basis,
 due to the exponential effects one can reach $100^5 = 10 Billion$ people in the 5\textsuperscript{th} step.
 As the world only inhabits about 7 Billion people,
 the chances of finding a connection is quite large.
+
+\subsubsection{Features of Small World networks} % (fold)
+\label{ssub:features_of_small_world_networks}
+	Small World Networks are defined,
+	so that most nodes are not neighbors,
+	but most nodes can be reached by a small number of hops.
+
+	It hast a \emph{high Clustering Coefficient}
+	and a \emph{low Diameter}.
+	The Diameter is almost equal to a random network of the same size.
+% subsubsection features_of_small_world_networks (end)
 % subsection small_world_phenomenon (end)
 
 % section social_networks_structure_&_properties (end)
