@@ -22,12 +22,7 @@ and which structures are likely to emerge in the society.
 	but shows that knowledge about network structure gives insights into political and economic structures.
 % paragraph marriage_network_in_florentine (end)
 
-\subsection{Random Network} % (fold)
-\label{sub:random_network}
-There are several possibilities to create random networks.
-We will discuss two variants here.
-
-\subsubsection{Erd\"os-Renyi\\} % (fold)
+\subsection[Random Network]{Random Network - Erd\"os-Renyi\\} % (fold)
 \label{ssub:erdoes-renyi}
 These networks are generated in a random process,
 whom origins with fixed set of nodes $N = {1,2,..,n}$.
@@ -68,8 +63,8 @@ is larger than $p$ the graph will break in several components.
 If $p > (n-1)p= log (n)$ the graph is connected with a high probability.
 % subsubsection erdoesrenyi (end)
 
-\subsubsection{Watts-Strogatz} % (fold)
-\label{ssub:watts_strogatz}
+\subsection[Small World Network]{Small World Network - Watts-Strogatz} % (fold)
+\label{sub:watts_strogatz}
 This Model tries to generate a network with a low diameter (\ref{par:diameter})
 and a high clustering coefficient (\ref{ssub:clustering_coefficient}).
 The generation starts with a regular lattice
@@ -78,7 +73,26 @@ With $p = 0$, a regular network will be generated
 and with $p = 1$ a random one will emerge.
 The randomization takes place by lowering the average path length (\ref{par:average_path_length}).
 
-% subsubsection watts_strogatz (end)
-% subsection random_network (end)
+Networks created with \emph{Small World Model} have a high clustering coefficient
+and a low diameter.
+% subsection watts_strogatz (end)
+
+\subsection{Scale-free Network} % (fold)
+\label{sub:scale_free_network}
+Scale-free Networks are networks whose degree distribution follows a Power law.
+Several models are proposed to generate these networks randomly.
+The simple \emph{Rich get richer model},
+which will be explained here,
+the preferential attachment by Barabasi 
+and the Fitness Model by Biancomi and by Kong.
+
+\paragraph{The Rich get richer model} % (fold)
+\label{par:the_rich_get_richer_model}
+follows the Power law.
+In the process of creation new nodes are added to the network in each step.
+With a given probability this node.
+% paragraph the_rich_get_richer_model (end)
+% subsection scale_free_network (end)
+
 
 % section lecture_5_network_models (end)
