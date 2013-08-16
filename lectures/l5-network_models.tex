@@ -3,8 +3,7 @@
 As social networks play an important role on its inhabitants.
 They influence the flow of information,
 the spread of disease,
-the trade of goods and services as well as which languages we speak and what we vote.
-
+the trade of goods and services as well as which languages we speak and what we vote.\\
 With network analysis technologies we can try to understand,
 how their structure influences us
 and which structures are likely to emerge in the society.
@@ -22,5 +21,41 @@ and which structures are likely to emerge in the society.
 	This not only illustrates the importance of the families,
 	but shows that knowledge about network structure gives insights into political and economic structures.
 % paragraph marriage_network_in_florentine (end)
+
+\subsection{Random Network} % (fold)
+\label{sub:random_network}
+There are several possibilities to create random networks.
+We will discuss two variants here.
+
+\subsubsection{Erd\"os-Renyi\\} % (fold)
+\label{ssub:erdoes-renyi}
+These networks are generated in a random process,
+whom origins with fixed set of nodes $N = {1,2,..,n}$.
+Then links between the nodes are added with a given probability $p (0 < p < 1)$.\\
+For a given network with $m$ links,
+the probability that it is formed is:
+
+\begin{equation}
+\label{eq:erdoesrenyiprob}
+	p^m (1 - p)^{\frac{n(n-1)}{2}-m}
+\end{equation}
+The Degree Distribution \ref{ssub:degree_distribution}
+that any given node $i$ has exactly $d$ links is then
+
+\begin{equation}
+\label{eq:erdoesrenyidegreedist}
+	Pr(d) = \binom{n-1}{d} p^d(1-p)^{n-1-d}
+\end{equation}
+For large $n$ and small $p$,
+this binomial expression is approximated by a poisson distribution
+
+\begin{equation}
+\label{eq:erdoesrenyipoisson}
+	Pr(d) = \frac{e^{-(n-1)p}((n-1)p)^d}{d!}
+\end{equation}
+Such networks are called \emph{Poisson Random Networks}.
+
+% subsubsection erd\ (end)
+% subsection random_network (end)
 
 % section lecture_5_network_models (end)
