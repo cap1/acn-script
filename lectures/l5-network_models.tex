@@ -47,13 +47,25 @@ that any given node $i$ has exactly $d$ links is then
 	Pr(d) = \binom{n-1}{d} p^d(1-p)^{n-1-d}
 \end{equation}
 For large $n$ and small $p$,
-this binomial expression is approximated by a poisson distribution
+this binomial expression is approximated by a Poisson distribution
 
 \begin{equation}
 \label{eq:erdoesrenyipoisson}
 	Pr(d) = \frac{e^{-(n-1)p}((n-1)p)^d}{d!}
 \end{equation}
 Such networks are called \emph{Poisson Random Networks}.
+The connectivity of the graph can be calculated easily with Equation \ref{eq:erdoesrenyipoisson}.
+
+\begin{equation}
+	Pr(0) = e^{-(n-1)p}
+\end{equation}
+One can further solve this and when:
+
+\begin{equation}
+	(n-1)p= log (n)
+\end{equation}
+is larger than $p$ the graph will break in several components.
+If $p > (n-1)p= log (n)$ the graph is connected with a high probability.
 
 % subsubsection erd\ (end)
 % subsection random_network (end)
