@@ -13,7 +13,7 @@ and which structures are likely to emerge in the society.
 	An example can be the network of marriages in Florentine in the fifteenth century.
 	Through network analysis one can find hints for the shift of power from the 
 	Strozzi family to the Medici family.
-	The Degree Centrality \ref{ssub:degree_centrality} for the Strozzi family in the network
+	The Degree Centrality (\ref{ssub:degree_centrality}) for the Strozzi family in the network
 	was only 4/15, but for the Medicis it was 6/15.
 	The Betweenness Centrality of the Strozzis was $0.103$,
 	which is very low compared to the $05.22$ of the Medicis,
@@ -39,7 +39,7 @@ the probability that it is formed is:
 \label{eq:erdoesrenyiprob}
 	p^m (1 - p)^{\frac{n(n-1)}{2}-m}
 \end{equation}
-The Degree Distribution \ref{ssub:degree_distribution}
+The Degree Distribution (\ref{ssub:degree_distribution})
 that any given node $i$ has exactly $d$ links is then
 
 \begin{equation}
@@ -66,8 +66,19 @@ One can further solve this and when:
 \end{equation}
 is larger than $p$ the graph will break in several components.
 If $p > (n-1)p= log (n)$ the graph is connected with a high probability.
+% subsubsection erdoesrenyi (end)
 
-% subsubsection erd\ (end)
+\subsubsection{Watts-Strogatz} % (fold)
+\label{ssub:watts_strogatz}
+This Model tries to generate a network with a low diameter (\ref{par:diameter})
+and a high clustering coefficient (\ref{ssub:clustering_coefficient}).
+The generation starts with a regular lattice
+and continuously rewires the network with a given probability $p | 0<p<1$.
+With $p = 0$, a regular network will be generated
+and with $p = 1$ a random one will emerge.
+The randomization takes place by lowering the average path length (\ref{par:average_path_length}).
+
+% subsubsection watts_strogatz (end)
 % subsection random_network (end)
 
 % section lecture_5_network_models (end)
