@@ -91,6 +91,13 @@ and the Fitness Model by Biancomi and by Kong.
 follows the Power law.
 In the process of creation new nodes are added to the network in each step.
 With a given probability this node.
+
+In an iterative process the network is created.
+When a node $j$ is added to the network,
+it produces a link either to a node $i$ choosen uniformly from the set of previously created nodes
+with the probabilty ($0 < p < 1$) or \\
+with probability ($1-p$) the node $j$ chooses a node $i$ uniformly at random
+and links to a node $i$ points to.
 % paragraph the_rich_get_richer_model (end)
 % subsection scale_free_network (end)
 

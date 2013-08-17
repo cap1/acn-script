@@ -11,7 +11,7 @@
 			"file": "acn.tex",
 			"settings":
 			{
-				"buffer_size": 1706,
+				"buffer_size": 1854,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,23 @@
 			"file": "lectures/l3-osn.tex",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 3292,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lectures/l4-osn_struct-prop.tex",
+			"settings":
+			{
+				"buffer_size": 7610,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lectures/l5-network_models.tex",
+			"settings":
+			{
+				"buffer_size": 4080,
 				"line_ending": "Unix"
 			}
 		}
@@ -35,16 +51,52 @@
 	"build_system": "Packages/Makefile/Make.sublime-build",
 	"command_palette":
 	{
-		"height": 232.0,
+		"height": 32.0,
 		"selected_items":
 		[
+			[
+				"qui",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
 			[
 				"q",
 				"Git: Quick Commit"
 			],
 			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"diff",
+				"Git: Diff"
+			],
+			[
+				"qu",
+				"Git: Quick Commit"
+			],
+			[
 				"git add",
 				"Git: Add Current File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git diff",
+				"Git: Diff"
 			],
 			[
 				"git pu",
@@ -59,15 +111,7 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				" git pull",
-				"Git: Pull"
-			],
-			[
-				"git pull",
 				"Git: Pull"
 			],
 			[
@@ -75,32 +119,8 @@
 				"Package Control: Install Package"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"qui",
-				"Git: Quick Commit"
-			],
-			[
-				"add",
-				"Git: Add Current File"
-			],
-			[
 				"ad",
 				"Git: Add Current File"
-			],
-			[
-				"git diff",
-				"Git: Diff Current File"
-			],
-			[
-				"quic",
-				"Git: Quick Commit"
-			],
-			[
-				"qu",
-				"Git: Quick Commit"
 			]
 		],
 		"width": 593.0
@@ -135,7 +155,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -149,6 +169,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"diameter",
+			"degree dis",
+			"\\cdot",
 			"asymmetrische Zell",
 			"asymme",
 			"	\n",
@@ -161,6 +184,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"---",
 			"ebio"
 		],
 		"reverse": false,
@@ -172,7 +196,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -181,15 +205,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1706,
+						"buffer_size": 1854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1706,
-								1706
+								1837,
+								1837
 							]
 						],
 						"settings":
@@ -197,7 +221,7 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -215,8 +239,8 @@
 						"selection":
 						[
 							[
-								10364,
-								10364
+								59,
+								59
 							]
 						],
 						"settings":
@@ -236,23 +260,81 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 148,
+						"buffer_size": 3292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								43,
-								43
+								3199,
+								3199
 							]
 						],
 						"settings":
 						{
+							"spell_check": false,
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lectures/l4-osn_struct-prop.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7610,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1897,
+								1897
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 347.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lectures/l5-network_models.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3955,
+								3955
+							]
+						],
+						"settings":
+						{
+							"spell_check": false,
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -307,10 +389,14 @@
 	{
 		"height": 100.0
 	},
+	"output.git-push":
+	{
+		"height": 100.0
+	},
 	"project": "acn.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -347,7 +433,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
