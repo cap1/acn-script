@@ -40,4 +40,26 @@ adaption of new technologies in a peer group,
 fashion and even in stock markets.
 % paragraph effects (end)
 % subsection information_cascades (end)
+
+\subsection{Social Influence Maximization} % (fold)
+\label{sub:social_influence_maximization}
+Networks consist in this context of nodes (people)
+and edges (social interactions, ties).
+
+The behavior of people is influenced by the behavior of other people.
+Understanding this influence is interesting for several aspects
+like rumours, collective dynamics and spread of behavior.
+Naturally one wants to know the most influential node in a network.
+
+Calculating this is difficult as an exponential amount of conditional probabilities is necessary,
+so simpler models or heuristics are needed.
+
+\paragraph{Deterministic Threshold models} % (fold)
+\label{par:deterministic_threshold_models}
+is a simple model that assumes nodes can be in two states.
+Each node has a threshold $0 < p < 1$.
+The node changes its state,
+when the fraction of their neighbors that are in already in the new state exceeds their threshold.
+% paragraph deterministic_threshold_models (end)
+% subsection social_influence_maximization (end)
 % section lecture_6_information_cascade_&_influence_maximization (end)
