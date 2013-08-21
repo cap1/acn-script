@@ -54,12 +54,52 @@ Naturally one wants to know the most influential node in a network.
 Calculating this is difficult as an exponential amount of conditional probabilities is necessary,
 so simpler models or heuristics are needed.
 
-\paragraph{Deterministic Threshold models} % (fold)
-\label{par:deterministic_threshold_models}
+\subsubsection{Deterministic Threshold models} % (fold)
+\label{ssub:deterministic_threshold_models}
 is a simple model that assumes nodes can be in two states.
 Each node has a threshold $0 < p < 1$.
 The node changes its state,
 when the fraction of their neighbors that are in already in the new state exceeds their threshold.
-% paragraph deterministic_threshold_models (end)
+
+\paragraph{Maximization} % (fold)
+\label{par:maximization}
+of influence by choosing the appropriate nodes to start with
+is a NP-Hard problem.
+It contains the NP-complete Vertex Cover problem as a special case.
+% paragraph maximization (end)
+% subsubsection deterministic_threshold_models (end)
+
+\subsubsection{Probabilistic Influence Models} % (fold)
+\label{ssub:probabilistic_influence_models}
+In this model,
+when a new node adopts the new behavior their is a given chance (hence the probability)
+to infect one of its neighbors with the new behavior.
+The probability can be determined by the weight of the edge,
+connecting the nodes.
+\paragraph{Maximization} % (fold)
+\label{par:maximization}
+is still a NP-Hard problem,
+as it includes the NP-Complete set cover problem as a special case.
+% paragraph maximization (end)
+% subsubsection probabilistic_influence_models (end)
+
+\subsubsection{Approximations} % (fold)
+\label{ssub:approximations}
+The Results can be approximated,
+where the Greedy Hill-climbing is the most successful heuristic.
+
+	\paragraph{Node Degree} % (fold)
+	\label{par:node_degree}
+	Selecting the node with the highest degree (e.g. number of friends)
+	% paragraph node_degree (end)
+	\paragraph{Distance Centrality} % (fold)
+	\label{par:distance_centrality}
+	Selecting the nodes with the lowest average distance to all other nodes.
+	% paragraph distance_centrality (end)
+	\paragraph{Greedy Hill-climbing} % (fold)
+	\label{par:greedy_hill_climbing}
+This algorithm chooses the node for which the objective grows the most.
+% paragraph greedy_hill_climbing (end)
+% subsubsection approximations (end)
 % subsection social_influence_maximization (end)
 % section lecture_6_information_cascade_&_influence_maximization (end)
