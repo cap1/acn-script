@@ -1,4 +1,33 @@
 \section{Lecture 7 - Applications of Social Networks} % (fold)
 \label{sec:lecture_7_applications_of_social_networks}
 
+\subsection{Decentralized Search} % (fold)
+\label{sub:decentralized_search}
+The goal is to find the shortest path between a pair of nodes in a small world network.
+As we have seen from Milgrams experiment,
+a decentralized search where all nodes help is possible.
+
+The principle is that node $s$ sending a message to node $t$,
+without know the path to $t$.
+Node $s$ only has local information
+and does know the rough direction to node $t$.
+It sends the message to a node it beliefs beeing closer to $t$.
+The length of the searchpath is then the number of steps or hops till the message reaches $t$.
+
+\subsubsection{General Network} % (fold)
+\label{ssub:general_network}
+	Depending on dimension it can either be a  ring or a grid.
+	Each node is connected to its direct neighbors
+	and has one long link.
+	The probability of a link from $u$ to $v$ is then:
+	
+	\begin{equation}
+		Pr\{u \rightarrow v\} ~ d(u, v)^{-q}
+	\end{equation}
+	Choosing the right value for the parameter $q$ depends on the network.
+	It should not be too random and not to predictable.
+	In experiements the ideal value is roughly at $1.75$.
+% subsubsection general_network (end)
+% subsection decentralized_search (end)
+
 % section lecture_7_applications_of_social_networks (end)
