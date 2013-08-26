@@ -1,4 +1,26 @@
 \section{Lecture 9 - Scaling of OSN} % (fold)
 \label{sec:lecture_9_scaling_of_osn}
 
+\subsection{Introduction to OSN Scaling}
+As Online Social Networks are extremly popular,
+their demand for a scalable ifrastructure to support their grwoth is natural.
+Cloud COmputing can provide such scaling,
+but it leads to some problems that need to be deatl with.
+
+Conventional scaling approaches are horizontal or vertical.
+Where \emph{vertical} stands for the the upgrading the existing hardware.
+This can be expensive and be techincally infeasible.
+\emph{Horizontal} scaling means deploying a larger number of servers
+and distributing the workload amongst them.
+Although this is only suitable for stateless frontend servers,
+on backend storage servers the data must be partitioned into disjoint components.
+
+Bot approaches are not applicable to OSNs,
+as the large amaout of data rules out vertical sacling 
+and the large amount of interconnect makes horizontal scaling infeasible.
+This refers to the fact that in an OSN,
+ost operations are between users and their neighbors.
+Their data is usually placed on multiple servers
+and the mu 'multi-get' operations genrate a huge amount of traffic
+and unpredictable responsetimes.
 % section lecture_9_scaling_of_osn (end)
