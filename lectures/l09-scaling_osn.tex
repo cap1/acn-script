@@ -23,4 +23,35 @@ ost operations are between users and their neighbors.
 Their data is usually placed on multiple servers
 and the mu 'multi-get' operations genrate a huge amount of traffic
 and unpredictable responsetimes.
+
+\subsection{Social Paritioning and Replication} % (fold)
+\label{sub:social_paritioning_and_replication}
+A novel soulution for these problmes could be \emph{SPAR} (Social Partitioning And Replication).
+Its approach is to have a one-hop replication
+so that all neighbors of users are replicated on the same server.
+This leads to a 'Social Locality'.\\
+The requirements for SPAR are:
+	\begin{itemize}
+		\item Maintain local semantics
+		\item Balance loads
+		\item Be resilient to machine failures
+		\item Be amenable to online operations
+		\item Be stable
+		\item Minimize the replication overhead
+	\end{itemize}
+% subsection social_paritioning_and_replication (end)
+
+\subsection{OSN in the Cloud} % (fold)
+\label{sub:osn_in_the_cloud}
+OSNs require features that can be delivered very well with cloud computing.
+The networks need to be available in a reliable fashion
+on a global scale.
+They also require high amounts of flexibility in the amount of workload they can do.
+
+Cloud computing can provide the availability, flexibility and scalability required by OSNs.
+Due to the 'pay-as-you-go' plans the cost do not have to paid in front.
+The cloud allows to serve customers,
+but keep the cost at a low level.
+Although the Quality of Service (QoS) must be maintained.
+% subsection osn_in_the_cloud (end)
 % section lecture_9_scaling_of_osn (end)
