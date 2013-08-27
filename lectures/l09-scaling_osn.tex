@@ -2,31 +2,31 @@
 \label{sec:lecture_9_scaling_of_osn}
 
 \subsection{Introduction to OSN Scaling}
-As Online Social Networks are extremly popular,
-their demand for a scalable ifrastructure to support their grwoth is natural.
+As Online Social Networks are extremely popular,
+their demand for a scalable infrastructure to support their growth is natural.
 Cloud COmputing can provide such scaling,
-but it leads to some problems that need to be deatl with.
+but it leads to some problems that need to be dealt with.
 
 Conventional scaling approaches are horizontal or vertical.
 Where \emph{vertical} stands for the the upgrading the existing hardware.
-This can be expensive and be techincally infeasible.
+This can be expensive and be technically infeasible.
 \emph{Horizontal} scaling means deploying a larger number of servers
 and distributing the workload amongst them.
-Although this is only suitable for stateless frontend servers,
-on backend storage servers the data must be partitioned into disjoint components.
+Although this is only suitable for stateless front-end servers,
+on back-end storage servers the data must be partitioned into disjoint components.
 
 Bot approaches are not applicable to OSNs,
-as the large amaout of data rules out vertical sacling 
+as the large amount of data rules out vertical scaling 
 and the large amount of interconnect makes horizontal scaling infeasible.
 This refers to the fact that in an OSN,
-ost operations are between users and their neighbors.
+most operations are between users and their neighbors.
 Their data is usually placed on multiple servers
-and the mu 'multi-get' operations genrate a huge amount of traffic
-and unpredictable responsetimes.
+and the mu 'multi-get' operations generate a huge amount of traffic
+and unpredictable response times.
 
 \subsection{Social Paritioning and Replication} % (fold)
 \label{sub:social_paritioning_and_replication}
-A novel soulution for these problmes could be \emph{SPAR} (Social Partitioning And Replication).
+A novel solution for these problems could be \emph{SPAR} (Social Partitioning And Replication).
 Its approach is to have a one-hop replication
 so that all neighbors of users are replicated on the same server.
 This leads to a 'Social Locality'.\\
