@@ -1,4 +1,44 @@
-\section{Lecture 10 - Content Centric Networks I} % (fold)
-\label{sec:lecture_10_content_centric_networks_1}
+\section{Lecture 10 \& 11 - Content Centric Networks} % (fold)
+\label{sec:lecture_10_content_centric_networks}
+A Content Centric Network (CCN) is a so called Next Generation Network.
+It is a concept that focuses on retrieving the data that is requested by the users
+instead of letting the user reference a certain physical location where the data is stored.\\
+The Current Network relies on a host based architecture that was created in the 1970s.
 
+\subsection{Creating Content Centric Networks} % (fold)
+\label{sub:creating_content_centric_networks}
+The basic idea is to replace the IP Protocol,
+with a \emph{Content Name}.
+It consists of several parts that allow addressing content
+and looks like an URL.
+It starts with a globally routable name
+who is followed by user, appsupplied or organizational name.
+The last part can determine a certain version or segment of the data.
+
+The data is send in \emph{Data Packets},
+who are send in a query-response fashion.
+The data packets are cached at each level of the network.
+This caching allows improvements in speed of serving the data,
+as the next time it can be served directly from the cache.
+In the worst case its is like the current service,
+as the data is request directly form its source.
+
+\paragraph{Interests} % (fold)
+\label{par:interests}
+are the data packets that are send out to request data.
+They contain the Content Name as the identifier,
+a selector that determines order preference, scope or a certain filter
+and finally a nonce that will allow cryptographically secure answers.
+% paragraph interests (end()
+\paragraph{Data} % (fold)
+\label{par:data}
+are the responses to interests and contain the data.
+Additionally they contain the Content Name,
+an optional description,
+a signature from a digest algorithm,
+additional signed information from the publisher
+and the data itself.
+% paragraph data (end)
+
+% subsection creating_content_centric_networks (end)
 % section lecture_10_content_centric_networks_1 (end)
