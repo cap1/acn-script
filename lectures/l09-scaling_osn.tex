@@ -53,5 +53,37 @@ Due to the 'pay-as-you-go' plans the cost do not have to paid in front.
 The cloud allows to serve customers,
 but keep the cost at a low level.
 Although the Quality of Service (QoS) must be maintained.
+
+\subsubsection{Cloud QoS} % (fold)
+\label{ssub:cloud_qos}
+There is always a trade off between the quality of the service and the cost.
+In OSNs this is especially difficult,
+as new users join and old users leave.
+The overall goal is to maximize QoS and minimize the cost.
+
+In a multi-cloud scenario,
+one can rank the clouds for each user according to metrics like access time.
+One can then use a vector approach and try to find out on which nodes or clouds of the networks
+certain user data shall be stored to keep access times low as well as costs.
+
+\paragraph{Cosplay} % (fold)
+\label{par:cosplay}
+is an algorithm that can be applied to this problem.
+It allows to swap the roles between master and slave replicas,
+which can be feasible in to reduce the costs.
+it is important here to maintain social locality of the users data.
+% paragraph cosplay (end)
+% subsubsection cloud_qos (end)
+
+\subsubsection{Social data placement in Data-centers} % (fold)
+\label{ssub:social_data_placement_in_datacenters}
+In Data centers it is important how the data is spread across the nodes.
+Here the goals are to minimize the traffic that is routed through the highest tiers of the network,
+the core.
+The second goal is to minimize the traffic that has to traverse any switch.\\
+It might be feasible to switch the roles of master and slave replicas.
+This can lead to a reduction of traffic,
+as social locality is maintained which leads to less data having to leave the node.
+% subsubsection social_data_placement_in_datacenters (end)
 % subsection osn_in_the_cloud (end)
 % section lecture_9_scaling_of_osn (end)
